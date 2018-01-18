@@ -17,3 +17,7 @@ function initializePage() {
 	// example: $("#div-id").click(functionToCall);
 	$("a.thumbnail").click(projectClick);
 }
+function projectClick(e) {
+	e.preventDefault();
+	$(this).css("background-color", "#7fff00")
+}
